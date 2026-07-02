@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+body{
+margin:0;
+font-family:Poppins,sans-serif;
+}
+
+html{scroll-behavior:smooth}
+
+/* NAV */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+width:100%;
+background:#35A99C;
+color:white;
+padding:15px 30px;
+z-index:1000;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-weight:500;
+}
+
+.nav-links a:hover{
+text-decoration:underline;
+}
+
+/* HERO */
+.hero{
+background:url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80")
+no-repeat center/cover;
+height:100vh;
+display:flex;
+align-items:center;
+color:white;
+padding-left:50px;
+}
+
+/* SECTIONS */
+section{
+scroll-margin-top:80px;
+}
+
+/* PORTFOLIO */
+.portfolio{
+padding:80px;
+text-align:center;
+}
+
+.my-row{
+display:flex;
+justify-content:space-between;
+margin-top:30px;
+}
+
+.port-card{
+width:30%;
+border:1px solid #ddd;
+border-radius:10px;
+overflow:hidden;
+}
+
+.port-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+/* ABOUT */
+.about{
+display:flex;
+padding:80px;
+gap:40px;
+}
+
+.about img{
+width:300px;
+border-radius:10px;
+}
+
+/* SERVICES */
+.services{
+padding:80px;
+text-align:center;
+}
+
+.my-card{
+background:#35A99C;
+color:white;
+padding:20px;
+border-radius:10px;
+width:30%;
+}
+
+.my-card p{
+font-size:14px;
+margin-top:10px;
+}
+
+/* CONTACT */
+.contact{
+padding:80px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="navbar">
+<h2>Gayatri Khandekar</h2>
+
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#projects">My Projects</a>
+<a href="#about">About Me</a>
+<a href="#services">My Services</a>
+<a href="#contact">Contact Me</a>
+</div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div>
+<h1>Hello, I'm Gayatri</h1>
+<h3>Computer Engineering Student</h3>
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="projects">
+
+<h1>My Projects</h1>
+
+<div class="my-row">
+
+<div class="port-card">
+<img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80">
+<h3>Web Design</h3>
+</div>
+
+<div class="port-card">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80">
+<h3>Web Development</h3>
+</div>
+
+<div class="port-card">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80">
+<h3>SEO / Analytics</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+<div class="about-text">
+<h1>About Me</h1>
+
+<p>
+Hi! I'm Gayatri Khandekar, a Computer Engineering student passionate about web development and UI design.
+I enjoy creating modern, responsive, and user-friendly websites using HTML, CSS, and JavaScript.
+</p>
+
+<p>
+I am continuously learning new technologies and improving my skills in frontend development and problem-solving.
+My goal is to build impactful digital experiences that are both visually appealing and functional.
+</p>
+
+</div>
+
+<div class="about-image">
+<img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80">
+</div>
+
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+<h1>My Services</h1>
+
+<div class="my-row">
+
+<div class="my-card">
+Web Design
+<p>I create clean and modern UI designs that are user-friendly and visually appealing.</p>
+</div>
+
+<div class="my-card">
+Web Development
+<p>I build responsive websites using HTML, CSS, and JavaScript with smooth functionality.</p>
+</div>
+
+<div class="my-card">
+SEO Optimization
+<p>I improve website visibility on search engines using basic SEO strategies and optimization techniques.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+<h1>Contact Me</h1>
+
+<p>Email: example@gmail.com</p>
+<p>Phone: +91 0123456789</p>
+<p>Address: Kolhapur</p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p style="text-align:center;background:#000;color:#fff;padding:20px;">
+© 2026 Gayatri Khandekar Portfolio
+</p>
+</footer>
+
+</body>
+</html>
